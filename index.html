@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dota 2 - Легендарная игра</title>
+  <style>
+    /* Сброс отступов и базовые стили */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f1923;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f2833;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #e25822;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e25822;
+    }
+    h2 {
+      color: #e25822;
+      margin-bottom: 10px;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #1f2833;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px #e25822;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2833;
+      border-top: 3px solid #e25822;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+      .content {
+        flex-direction: column;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Dota 2 — Легендарная MOBA
+  </header>
+  <main>
+    <section class="intro">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="Dota 2 Hero" />
+      <p>Добро пожаловать в мир Dota 2 — одну из самых популярных и стратегически глубоких MOBA игр в мире.</p>
+    </section>
+    <section class="content">
+      <div class="card">
+        <h2>Что такое Dota 2?</h2>
+        <p>Dota 2 — командная игра жанра MOBA, где две команды по пять игроков сражаются, чтобы разрушить главное здание противника — Древний.</p>
+      </div>
+      <div class="card">
+        <h2>Герои</h2>
+        <p>В игре более 120 уникальных героев, каждый со своими способностями, ролями и стилем игры.</p>
+      </div>
+      <div class="card">
+        <h2>Соревнования</h2>
+        <p>Dota 2 — одна из киберспортивных дисциплин с крупнейшими турнирами и огромными призовыми фондами.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Dota 2 Fan Site
+  </footer>
+</body>
+</html>
