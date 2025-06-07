@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Герои — Dota 2 Fan Site</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f1923;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f2833;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #e25822;
+    }
+    nav {
+      background: #131f2e;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #e25822;
+    }
+    nav a {
+      color: #e25822;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6b35;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    h1 {
+      color: #e25822;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .heroes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .hero-card {
+      background: #1f2833;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px #e25822;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .hero-card:hover {
+      transform: scale(1.05);
+    }
+    .hero-card img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px #e25822;
+    }
+    .hero-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    .hero-role {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2833;
+      border-top: 3px solid #e25822;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+      nav {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Dota 2 — Легендарная MOBA</header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О сайте</a>
+    <a href="heroes.html">Герои</a>
+  </nav>
+  <main>
+    <h1>Герои Dota 2</h1>
+    <div class="heroes-grid">
+      <div class="hero-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="Anti-Mage" />
+        <div class="hero-name">Anti-Mage</div>
+        <div class="hero-role">Carry / Escape</div>
+      </div>
+      <div class="hero-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png" alt="Crystal Maiden" />
+        <div class="hero-name">Crystal Maiden</div>
+        <div class="hero-role">Support / Nuker</div>
+      </div>
+      <div class="hero-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png" alt="Pudge" />
+        <div class="hero-name">Pudge</div>
+        <div class="hero-role">Initiator / Durable</div>
+      </div>
+      <div class="hero-card">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png" alt="Juggernaut" />
+        <div class="hero-name">Juggernaut</div>
+        <div class="hero-role">Carry / Pusher</div>
+      </div>
+    </div>
+  </main>
+  <footer>&copy; 2025 Dota 2 Fan Site</footer>
+</body>
+</html>
