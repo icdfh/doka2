@@ -26,6 +26,22 @@
       text-transform: uppercase;
       border-bottom: 3px solid #e25822;
     }
+    nav {
+      background: #131f2e;
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #e25822;
+    }
+    nav a {
+      color: #e25822;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6b35;
+    }
     main {
       max-width: 1000px;
       margin: 30px auto;
@@ -76,6 +92,9 @@
         font-size: 1.5rem;
         padding: 15px;
       }
+      nav {
+        font-size: 0.9rem;
+      }
       .content {
         flex-direction: column;
       }
@@ -89,6 +108,13 @@
   <header>
     Dota 2 — Легендарная MOBA
   </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О сайте</a>
+    <a href="heroes.html">Герои</a>
+  </nav>
+
   <main>
     <section class="intro">
       <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="Dota 2 Hero" />
@@ -109,6 +135,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     &copy; 2025 Dota 2 Fan Site
   </footer>
